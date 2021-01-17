@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# testColorz
-Test d'integration d'un site pour Colorz
-=======
-# README #
+# testColorz #
+### Test d'integration d'un site pour Colorz
 
 ### Versions used ###
 
@@ -24,4 +21,3 @@ Test d'integration d'un site pour Colorz
 * npm install
 * gulp
 * live-server (install live server globally -> npm install -g live-server)
->>>>>>> 8f96e39 (Creating repository to Test project for Colorz)
