@@ -1,0 +1,60 @@
+//  COLORS
+$white: #FFFF
+$black: #3b3b3b
+$orange: #f07138
+$lightOrange: #f4a340
+$navy: #032655
+$yellow: #fce24c
+$red: #de4730
+$blue: #015086
+$lightblue: #cadbdc
+$lightGrey: #CCCCCC
+$grey: #3b3b3b
+$green: green
+
+$redCat: #d6181f
+$greenCat: #01d222
+$navyCat: #033f8b
+$yellowCat: #fff100
+$orangeCat: #f7931e
+$cyanCat: #00a4f0
+$limeCat: #b8d53b
+$textCat: #fcef02
+$greyCat: #7f7d7d
+
+// OTHERS
+=transition($transition...)
+	-moz-transition: all $transition linear
+	-o-transition: all $transition linear
+	-webkit-transition: all $transition linear
+	transition: all $transition linear
+
+=clearfix()
+	&:after
+	&:before
+		content: ""
+		display: table
+	&:after
+		display: block
+		clear: both
+		height: 1px
+		margin-top: -1px
+		visibility: hidden
+	&
+		*zoom: 1
+
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+
+=opacity($opacity)
+	opacity: $opacity
+	$opacity-ie: $opacity * 100
+	filter: alpha(opacity=$opacity-ie)
+
+// Brackground Color Opacity
+=background-opacity($color: #000, $opacity: 0.85)
+	background: $color
+	background: rgba($color, $opacity)

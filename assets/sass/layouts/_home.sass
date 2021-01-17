@@ -1,0 +1,132 @@
+@import '../config/mixins'
+
+main
+    background-color: #FFF
+    margin-top: -75px
+    height: fit-content
+    @media (max-width: 1199px)
+        margin-top: -75px
+        .container
+            section
+                .main-news
+                    img
+                        width: 50%
+                        margin-right: 20px
+    @media (max-width: 992px)
+        margin-top: 0
+        padding: 20px
+        .container
+            section
+                .main-news
+                    img
+                        width: 60%
+                        margin-right: 20px
+    @media (max-width: 768px)
+        margin-top: 0
+        padding: 20px
+        .container
+            max-width: 100%
+            section
+                width: 100%
+                .main-news
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    img
+                        width: 70%
+                        margin-right: 0
+                        margin: 15px auto
+                    .main-content-info
+                        width: 100% !important
+    @media (max-width: 425px)
+        .container
+            section
+                .main-news
+                    img
+                        width: 100%
+                        height: 260px
+                        object-fit: cover
+                    .main-content-info
+                        width: 100% !important
+                        .main-content-top
+                            justify-content: center
+                            .arrow-go
+                                display: none
+    .container
+        section
+            padding-bottom: 50px
+            .main-news
+                display: flex
+                justify-content: space-between
+                align-items: flex-end
+                margin-bottom: 30px
+                img
+                    z-index: 1
+
+                .main-content-info
+                    width: 540px
+                    .main-content-top
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        .main-content-title
+                            line-height: .9
+                            .cat
+                                text-transform: uppercase
+                                font-size: 11px
+                                font-weight: bolder
+                            h3
+                                font-weight: bolder
+                            .date-news
+                                color: #5E5E5E
+                                font-size: 11px
+                        .arrow-go
+                            cursor: pointer
+                    hr
+                        background-color: #EEE
+                    .main-content-text
+                        font-family: "Roboto"
+                        font-size: 14px
+                        color: #5E5E5E
+        .card-deck
+            .card
+                border: none
+                border-radius: none
+                margin-bottom: 30px
+                .card-img-top
+                    border-top-left-radius: 0
+                    border-top-right-radius: 0
+                    height: 260px
+                    object-fit: cover
+                .card-body
+                    padding: 20px 0
+                    .cat
+                        text-transform: uppercase
+                        font-size: 11px
+                        font-weight: bolder
+                    .title-news
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        line-height: .9
+                        .card-title
+                            font-family: "Roboto"
+                            font-weight: bolder
+                            margin-bottom: 0
+                            font-size: 24px
+                        .icon-arrow
+                            cursor: pointer
+                    .date-news
+                        color: #5E5E5E
+                        font-size: 11px
+                    hr
+                        background-color: #EEE
+                    .card-text
+                        font-family: "Roboto"
+                        font-size: 14px
+                        color: #5E5E5E
+            @media (max-width: 425px)
+                .card-body
+                    .title-news
+                        .icon-arrow
+                            display: none !important

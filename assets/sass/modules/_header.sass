@@ -1,0 +1,178 @@
+/* MENU */
+nav
+	height: 150px
+	background-color: #FFF
+	z-index: 1
+	padding: 0 20px
+	display: flex
+	justify-content: space-between
+	.navbar-toggler
+		border: none
+		color: #000 !important
+		padding: 0
+		font-size: 1.55rem
+	.logo-header-info
+		.navbar-brand
+			display: flex
+			flex-direction: column
+			img
+				width: 50%
+		.desc-logo
+			margin-top: 5px
+			color: #777
+			font-size: 12px
+			width: 70%
+	.navbar-collapse
+		display: flex
+		justify-content: flex-end
+		.menu-nav
+			display: flex
+			.navbar-nav
+				padding: 0 15px
+				.nav-link
+					text-transform: uppercase
+					color: #1c1c1d
+					border-bottom: 2px solid transparent
+					transition: all .3s
+					&:hover
+						border-bottom: 2px solid #333
+@media (max-width: 991px)
+	nav
+		height: auto
+		padding-bottom: 20px !important
+		.logo-header-info
+			text-align: center
+			margin: 15px 0
+			.navbar-brand
+				margin: 0
+				transition: .5s
+				img
+					align-self: center
+			.desc-logo
+				color: #777
+				font-size: 12px
+				width: 100%
+		.navbar-toggler
+			z-index: 1
+			outline: none
+		.collapse
+			background-color: #FFF
+		.collapsing
+			background-color: #FFF
+			height: 200px
+		.navbar-collapse
+			.menu-nav
+				width: 100%
+				.navbar-nav
+					width: 100%
+					padding: 0
+					.nav-item
+						border-bottom: 1px solid #CCC
+						&:last-child
+							margin-bottom: 20px
+@media (max-width: 500px)
+	nav
+		padding-right: 10px !important
+		padding-left: 10px !important
+		.logo-header-info
+			margin-top: 35px
+			width: 180px
+			.navbar-brand
+				margin: 0
+				transition: .5s
+				img
+					align-self: center
+					width: 65% !important
+			.desc-logo
+				color: #777
+				font-size: 12px
+				width: 100%
+@media (max-width: 375px)
+	nav
+		.logo-header-info
+			width: 160px
+			.navbar-brand
+				img
+					width: 70% !important
+			.desc-logo
+				color: #777
+				font-size: 12px
+				width: 100%
+
+
+/* HEADER BANNER */
+header
+	width: 100%
+	height: 580px
+	overflow: hidden
+	position: relative
+	.img-wrapper
+		width: 100%
+		height: 100%
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.banner
+		position: absolute
+		top: 12%
+		left: 11%
+		h2
+			width: 595px
+			color: #FFF
+			font-size: 4rem
+			font-family: "Roboto"
+			text-shadow: 5px 8.66px 27px rgb( 0, 0, 0 )
+			margin-bottom: 25px
+			font-weight: bolder
+			span
+				font-weight: 300
+		button
+			color: #000
+			background-color: #FFF
+			padding: 6px 0
+			width: 255px
+			border: 2px solid #FFF
+			border-radius: 30px
+			font-weight: bolder
+			font-size: 14px
+			cursor: pointer
+			transition: all .3s
+			&:hover
+				background: transparent
+				color: #FFF
+@media (max-width: 620px)
+	header
+		.banner
+			position: absolute
+			top: 25%
+			left: 11%
+			h2
+				width: 80%
+				font-size: 2.5rem
+@media (max-width: 425px)
+	header
+		height: 350px
+		.banner
+			position: absolute
+			top: 12%
+			left: 11%
+			h2
+				width: 100%
+				font-size: 2.5rem
+			button
+				color: #000
+				background-color: #FFF
+				padding: 6px 0
+				width: 90%
+@media (max-width: 375px)
+	header
+		.banner
+			h2
+				font-size: 2.3rem
+@media (max-width: 320px)
+	header
+		.banner
+			h2
+				font-size: 2rem
